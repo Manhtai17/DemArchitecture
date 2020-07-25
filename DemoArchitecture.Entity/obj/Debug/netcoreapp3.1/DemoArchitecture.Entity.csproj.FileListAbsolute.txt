@@ -1,0 +1,7 @@
+D:\Visual 2019\DemoArchitecture\DemoArchitecture.Entity\bin\Debug\netcoreapp3.1\DemoArchitecture.Entity.deps.json
+D:\Visual 2019\DemoArchitecture\DemoArchitecture.Entity\bin\Debug\netcoreapp3.1\DemoArchitecture.Entity.dll
+D:\Visual 2019\DemoArchitecture\DemoArchitecture.Entity\bin\Debug\netcoreapp3.1\DemoArchitecture.Entity.pdb
+D:\Visual 2019\DemoArchitecture\DemoArchitecture.Entity\obj\Debug\netcoreapp3.1\DemoArchitecture.Entity.AssemblyInfoInputs.cache
+D:\Visual 2019\DemoArchitecture\DemoArchitecture.Entity\obj\Debug\netcoreapp3.1\DemoArchitecture.Entity.AssemblyInfo.cs
+D:\Visual 2019\DemoArchitecture\DemoArchitecture.Entity\obj\Debug\netcoreapp3.1\DemoArchitecture.Entity.dll
+D:\Visual 2019\DemoArchitecture\DemoArchitecture.Entity\obj\Debug\netcoreapp3.1\DemoArchitecture.Entity.pdb

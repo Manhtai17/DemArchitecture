@@ -1,0 +1,374 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture\\DemoArchitecture.csproj": {}
+  },
+  "projects": {
+    "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.BL\\DemoArchitecture.BL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.BL\\DemoArchitecture.BL.csproj",
+        "projectName": "DemoArchitecture.BL",
+        "projectPath": "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.BL\\DemoArchitecture.BL.csproj",
+        "packagesPath": "C:\\Users\\manht\\.nuget\\packages\\",
+        "outputPath": "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.BL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\manht\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.Common\\DemoArchitecture.Common.csproj": {
+                "projectPath": "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.Common\\DemoArchitecture.Common.csproj"
+              },
+              "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.DL\\DemoArchitecture.DL.csproj": {
+                "projectPath": "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.DL\\DemoArchitecture.DL.csproj"
+              },
+              "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.Entity\\DemoArchitecture.Entity.csproj": {
+                "projectPath": "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.Entity\\DemoArchitecture.Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.Common\\DemoArchitecture.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.Common\\DemoArchitecture.Common.csproj",
+        "projectName": "DemoArchitecture.Common",
+        "projectPath": "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.Common\\DemoArchitecture.Common.csproj",
+        "packagesPath": "C:\\Users\\manht\\.nuget\\packages\\",
+        "outputPath": "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\manht\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.DL\\DemoArchitecture.DL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.DL\\DemoArchitecture.DL.csproj",
+        "projectName": "DemoArchitecture.DL",
+        "projectPath": "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.DL\\DemoArchitecture.DL.csproj",
+        "packagesPath": "C:\\Users\\manht\\.nuget\\packages\\",
+        "outputPath": "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.DL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\manht\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.Common\\DemoArchitecture.Common.csproj": {
+                "projectPath": "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.Common\\DemoArchitecture.Common.csproj"
+              },
+              "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.Entity\\DemoArchitecture.Entity.csproj": {
+                "projectPath": "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.Entity\\DemoArchitecture.Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.10.4, )"
+            },
+            "MySql.Data.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.21, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.Entity\\DemoArchitecture.Entity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.Entity\\DemoArchitecture.Entity.csproj",
+        "projectName": "DemoArchitecture.Entity",
+        "projectPath": "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.Entity\\DemoArchitecture.Entity.csproj",
+        "packagesPath": "C:\\Users\\manht\\.nuget\\packages\\",
+        "outputPath": "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.Entity\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\manht\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture\\DemoArchitecture.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture\\DemoArchitecture.csproj",
+        "projectName": "DemoArchitecture",
+        "projectPath": "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture\\DemoArchitecture.csproj",
+        "packagesPath": "C:\\Users\\manht\\.nuget\\packages\\",
+        "outputPath": "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\manht\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.BL\\DemoArchitecture.BL.csproj": {
+                "projectPath": "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.BL\\DemoArchitecture.BL.csproj"
+              },
+              "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.Common\\DemoArchitecture.Common.csproj": {
+                "projectPath": "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.Common\\DemoArchitecture.Common.csproj"
+              },
+              "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.Entity\\DemoArchitecture.Entity.csproj": {
+                "projectPath": "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.Entity\\DemoArchitecture.Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -12,21 +12,20 @@ namespace DemoArchitecture.Controllers
     public class EmployeeController : BaseController<Employee>
     {
 
-
         public EmployeeController(IBaseBL<Employee> emp) : base(emp)
         {
         }
 
         [HttpGet]
-        //public IEnumerable<Employee> GetEmployees()
-        //{
-        //    var entities = _baseBL.GetAllBL();
-        //    return entities;
-        //}
-        public string Get()
+        public IEnumerable<Employee> GetEmployees()
         {
-            return "Hello";
+            var entities = _baseBL.GetAllBL();
+            return entities;
         }
+        //public string Get()
+        //{
+        //    return "Hello";
+        //}
 
     }
 }

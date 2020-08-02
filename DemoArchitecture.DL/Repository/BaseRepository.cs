@@ -7,9 +7,11 @@ namespace DemoArchitecture.DL.Repository
 	public class BaseRepository<T> : IRepository<T> where T : class
 	{
 		public readonly IDbContext<T> _dbContext;
+		//public MongoConnector<T> _dbContext;
 		public BaseRepository(IDbContext<T> dbContext)
 		{
 			_dbContext = dbContext;
+			//_dbContext = new MongoConnector<T>();
 		}
 
 		public Task<T> CreateEntityDL(T entity)

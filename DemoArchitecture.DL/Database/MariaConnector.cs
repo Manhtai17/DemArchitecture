@@ -10,10 +10,9 @@ namespace DemoArchitecture.DL.Database
 	{
 		public readonly MariaDbContext _dbContext;
 
-		public MariaConnector(IDbContext<T> dbContext)
+		public MariaConnector(MariaDbContext dbContext)
 		{
-			//_dbContext = (MariaDbContext)dbContext;
-			_dbContext = (MariaDbContext)dbContext;
+			_dbContext = dbContext;
 		}
 
 		public virtual async Task<T> CreateEntity(T entity)

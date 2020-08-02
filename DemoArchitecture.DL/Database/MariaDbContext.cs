@@ -8,9 +8,9 @@ namespace DemoArchitecture.DL.Database
 {
     public partial class MariaDbContext : DbContext
     {
-        public MariaDbContext()
-        {
-        }
+        //public MariaDbContext()
+        //{
+        //}
 
         public MariaDbContext(DbContextOptions<MariaDbContext> options)
             : base(options)

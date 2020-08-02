@@ -3303,7 +3303,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "3.1.6"
+          "Microsoft.EntityFrameworkCore": "3.1.6",
+          "MongoDB.Bson": "2.10.4",
+          "System.Collections": "4.3.0"
         },
         "compile": {
           "bin/placeholder/DemoArchitecture.Entity.dll": {}
@@ -10244,11 +10246,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture\\DemoArchitecture.csproj",
+      "projectUniqueName": "D:\\Visual 2019\\DemoArchitecture - Copy\\DemoArchitecture\\DemoArchitecture.csproj",
       "projectName": "DemoArchitecture",
-      "projectPath": "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture\\DemoArchitecture.csproj",
+      "projectPath": "D:\\Visual 2019\\DemoArchitecture - Copy\\DemoArchitecture\\DemoArchitecture.csproj",
       "packagesPath": "C:\\Users\\manht\\.nuget\\packages\\",
-      "outputPath": "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture\\obj\\",
+      "outputPath": "D:\\Visual 2019\\DemoArchitecture - Copy\\DemoArchitecture\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -10268,14 +10270,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.BL\\DemoArchitecture.BL.csproj": {
-              "projectPath": "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.BL\\DemoArchitecture.BL.csproj"
+            "D:\\Visual 2019\\DemoArchitecture - Copy\\DemoArchitecture.BL\\DemoArchitecture.BL.csproj": {
+              "projectPath": "D:\\Visual 2019\\DemoArchitecture - Copy\\DemoArchitecture.BL\\DemoArchitecture.BL.csproj"
             },
-            "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.Common\\DemoArchitecture.Common.csproj": {
-              "projectPath": "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.Common\\DemoArchitecture.Common.csproj"
+            "D:\\Visual 2019\\DemoArchitecture - Copy\\DemoArchitecture.Common\\DemoArchitecture.Common.csproj": {
+              "projectPath": "D:\\Visual 2019\\DemoArchitecture - Copy\\DemoArchitecture.Common\\DemoArchitecture.Common.csproj"
             },
-            "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.Entity\\DemoArchitecture.Entity.csproj": {
-              "projectPath": "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.Entity\\DemoArchitecture.Entity.csproj"
+            "D:\\Visual 2019\\DemoArchitecture - Copy\\DemoArchitecture.Entity\\DemoArchitecture.Entity.csproj": {
+              "projectPath": "D:\\Visual 2019\\DemoArchitecture - Copy\\DemoArchitecture.Entity\\DemoArchitecture.Entity.csproj"
             }
           }
         }

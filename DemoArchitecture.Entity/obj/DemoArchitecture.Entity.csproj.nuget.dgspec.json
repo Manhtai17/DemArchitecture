@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.Entity\\DemoArchitecture.Entity.csproj": {}
+    "D:\\Visual 2019\\DemoArchitecture - Copy\\DemoArchitecture.Entity\\DemoArchitecture.Entity.csproj": {}
   },
   "projects": {
-    "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.Entity\\DemoArchitecture.Entity.csproj": {
+    "D:\\Visual 2019\\DemoArchitecture - Copy\\DemoArchitecture.Entity\\DemoArchitecture.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.Entity\\DemoArchitecture.Entity.csproj",
+        "projectUniqueName": "D:\\Visual 2019\\DemoArchitecture - Copy\\DemoArchitecture.Entity\\DemoArchitecture.Entity.csproj",
         "projectName": "DemoArchitecture.Entity",
-        "projectPath": "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.Entity\\DemoArchitecture.Entity.csproj",
+        "projectPath": "D:\\Visual 2019\\DemoArchitecture - Copy\\DemoArchitecture.Entity\\DemoArchitecture.Entity.csproj",
         "packagesPath": "C:\\Users\\manht\\.nuget\\packages\\",
-        "outputPath": "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.Entity\\obj\\",
+        "outputPath": "D:\\Visual 2019\\DemoArchitecture - Copy\\DemoArchitecture.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -45,6 +45,14 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.6, )"
+            },
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[2.10.4, )"
+            },
+            "System.Collections": {
+              "target": "Package",
+              "version": "[4.3.0, )"
             }
           },
           "imports": [

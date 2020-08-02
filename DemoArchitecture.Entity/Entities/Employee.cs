@@ -1,4 +1,5 @@
 ﻿using DemoArchitecture.Entity.Entities;
+using MongoDB.Bson.Serialization.Attributes;
 using System;
 using System.Collections.Generic;
 
@@ -6,6 +7,8 @@ namespace DemoArchitecture.Entity.Entities
 {
     public class Employee : BaseEntity
     {
+        [BsonId]
+        [BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
         public string EmployeeId { get; set; }
         public string EmployeeCode { get; set; }
         public string FirstName { get; set; }

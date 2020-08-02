@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.Common\\DemoArchitecture.Common.csproj": {}
+    "D:\\Visual 2019\\DemoArchitecture - Copy\\DemoArchitecture.Common\\DemoArchitecture.Common.csproj": {}
   },
   "projects": {
-    "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.Common\\DemoArchitecture.Common.csproj": {
+    "D:\\Visual 2019\\DemoArchitecture - Copy\\DemoArchitecture.Common\\DemoArchitecture.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.Common\\DemoArchitecture.Common.csproj",
+        "projectUniqueName": "D:\\Visual 2019\\DemoArchitecture - Copy\\DemoArchitecture.Common\\DemoArchitecture.Common.csproj",
         "projectName": "DemoArchitecture.Common",
-        "projectPath": "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.Common\\DemoArchitecture.Common.csproj",
+        "projectPath": "D:\\Visual 2019\\DemoArchitecture - Copy\\DemoArchitecture.Common\\DemoArchitecture.Common.csproj",
         "packagesPath": "C:\\Users\\manht\\.nuget\\packages\\",
-        "outputPath": "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.Common\\obj\\",
+        "outputPath": "D:\\Visual 2019\\DemoArchitecture - Copy\\DemoArchitecture.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

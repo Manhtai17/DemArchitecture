@@ -1,10 +1,11 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using DemoArchitecture.BL;
 using DemoArchitecture.BL.Interfaces;
 using DemoArchitecture.DL.Database;
+using DemoArchitecture.DL.MongoSetting;
 using DemoArchitecture.DL.Repository;
 using DemoArchitecture.Entity.Entities;
 using Microsoft.AspNetCore.Builder;
@@ -14,6 +15,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Options;
 
 namespace DemoArchitecture
 {
@@ -29,18 +31,26 @@ namespace DemoArchitecture
 		// This method gets called by the runtime. Use this method to add services to the container.
 		public void ConfigureServices(IServiceCollection services)
 		{
-			services.AddDbContext<MariaDbContext>(options=>options
-				.UseMySQL(Configuration.GetConnectionString("MariaDB:ConnectionString")));
-			//services.AddScoped<IDbContext<Employee>,MariaConnector<Employee>>();
-			//services.AddTransient<IRepository<Employee>,EmployeeRepository>();
-			//services.AddTransient<IBaseBL<Employee>, EmployeeBL>();
-			services.AddSingleton(typeof(IDbContext<>), typeof(MariaConnector<>));
+
+			services.AddDbContext<MariaDbContext>(options => options
+				.UseMySQL(Configuration.GetSection("MariaDB").GetValue<string>("ConnectionString").ToString()));
+
+
+			//Bơm từ app setting to class
+			services.Configure<MongoSettings>(Configuration.GetSection("MongoDB"));
+			//Bơm từ class vào Interface
+			services.AddTransient<IDatabaseSetting>(sp =>
+				sp.GetRequiredService<IOptions<MongoSettings>>().Value);
+
+			services.AddSingleton<MongoDbContext>();
+
+			services.AddScoped(typeof(IDbContext<>), typeof(MariaConnector<>));
 			services.AddTransient(typeof(IRepository<>), typeof(BaseRepository<>));
 			services.AddTransient(typeof(IBaseBL<>), typeof(BaseBL<>));
-			
 
 			services.AddControllersWithViews();
 		}
+		
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
 		public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

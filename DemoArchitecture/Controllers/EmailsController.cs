@@ -1,57 +1,37 @@
-﻿using DemoArchitecture.BL.Interfaces;
-using DemoArchitecture.DL.Database;
-using DemoArchitecture.Entity.Entities;
+﻿using DemoArchitecture.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
-using System.Net.Mail;
 using System.Threading.Tasks;
 
 namespace DemoArchitecture.Controllers
 {
-	public class EmailsController : BaseController<Email>
+	public class EmailsController : Controller
 	{
-		public EmailsController(IBaseBL<Email> emp ) : base(emp)
-		{
+		private readonly ILogger<EmailsController> _logger;
 
+		public EmailsController(ILogger<EmailsController> logger)
+		{
+			_logger = logger;
 		}
 
-		[HttpPost]
-		[Route("send")]
-
-		public IActionResult  SendMail([FromBody]Email email)
+		public IActionResult EmailForm()
 		{
-			try
-			{
-				email.EmailId = Guid.NewGuid().ToString();
-				foreach(var mail in email.Recipients)
-				{
-					if (!ValidateEmail(mail))
-					{
-						return BadRequest();
-					}
-				}
-				
-				return Ok(email);
-			}
-			catch(Exception ex)
-			{
-				return BadRequest(ex);
-			}
+			return View();
 		}
 
-		public bool ValidateEmail(string email)
+		//public IActionResult Privacy()
+		//{
+		//	return View();
+		//}
+
+		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+		public IActionResult Error()
 		{
-			try
-			{
-				var addr = new System.Net.Mail.MailAddress(email);
-				return addr.Address == email;
-			}catch(Exception ex)
-			{
-				return false;
-			}
-			
+			return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
 		}
 	}
 }

@@ -8,23 +8,25 @@ class EmailJS {
     }
     
     initEvent() {
-        $(document).on('click', '#btn-send', { that: this }, this.onClickEditEmail);
+        $(document).on('click', '.get-infor-email', { that: this }, this.onClickSendEmail);
     }
     
     onClickSendEmail(event) {
-        let subject = $('#email-subject').val;
-        let body = $('#email-body').val;
-        let recipients = $('#recipient').val;
-        var email = {
-            "Subject": subject,
-            "Body": body,
-            "Recipients": recipients
-        };
+        alert("A");
+        var me = event.data.that;
+        var email = {};
+        email.emailSenderName = $('#emailnamefrom').val();
+        email.emailSenderAddress = $('#emailfrom').val();
+        email.recipients = $('#emailto').val();
+        email.subject = $('#emailsubject').val();
+        email.body = $('#emailbody').val();
+        email.customArgs = $('#emailheader').val();
+        console.log(email);
         $.ajax({
             method: 'POST',
             url: "/api/emails/send",
             contentType: 'application/json',
-            data: email
+            data: JSON.stringify(email)
         }).done((res) => {
                 console.log(res);
         }).fail(() => {

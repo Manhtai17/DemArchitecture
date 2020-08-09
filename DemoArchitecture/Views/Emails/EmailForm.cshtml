@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewData["Title"] = "EmailForm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="text-center">
+    <h1 class="display-4">Welcome Email</h1>
+
+</div>
+
+<div class="form-group">
+    <label for="exampleInputEmail1">Email Name From</label>
+    <input type="email" class="form-control" id="emailnamefrom" aria-describedby="emailHelp" placeholder="Enter email name from">
+</div>
+<div class="form-group">
+    <label for="exampleInputEmail1">Email From</label>
+    <input type="email" class="form-control" id="emailfrom" aria-describedby="emailHelp" placeholder="Enter email from">
+</div>
+<div class="form-group">
+    <label for="exampleInputEmail1">Email To</label>
+    <input type="email" class="form-control" id="emailto" aria-describedby="emailHelp" placeholder="Enter email to">
+</div>
+<div class="form-group">
+    <label for="exampleInputEmail1">Email Subject</label>
+    <input type="text" class="form-control" id="emailsubject" aria-describedby="emailHelp" placeholder="Enter email subject">
+</div>
+<div class="form-group">
+    <label for="exampleInputEmail1">Email Body</label>
+    <textarea class="form-control" id="emailbody" aria-describedby="emailHelp" placeholder="Enter email text"></textarea>
+</div>
+<div class="form-group">
+    <label for="exampleInputEmail1">Email Header</label>
+    <input type="text" class="form-control" id="emailheader" aria-describedby="emailHelp" placeholder="Enter header">
+</div>
+<button type="submit" class="btn btn-primary get-infor-email">Submit</button>
+
+
+@section Scripts{
+    <script src="/js/email/emailjs.js"></script>
+}
+

@@ -10246,11 +10246,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Visual 2019\\DemoArchitecture - Copy\\DemoArchitecture\\DemoArchitecture.csproj",
+      "projectUniqueName": "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture\\DemoArchitecture.csproj",
       "projectName": "DemoArchitecture",
-      "projectPath": "D:\\Visual 2019\\DemoArchitecture - Copy\\DemoArchitecture\\DemoArchitecture.csproj",
+      "projectPath": "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture\\DemoArchitecture.csproj",
       "packagesPath": "C:\\Users\\manht\\.nuget\\packages\\",
-      "outputPath": "D:\\Visual 2019\\DemoArchitecture - Copy\\DemoArchitecture\\obj\\",
+      "outputPath": "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -10270,14 +10270,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Visual 2019\\DemoArchitecture - Copy\\DemoArchitecture.BL\\DemoArchitecture.BL.csproj": {
-              "projectPath": "D:\\Visual 2019\\DemoArchitecture - Copy\\DemoArchitecture.BL\\DemoArchitecture.BL.csproj"
+            "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.BL\\DemoArchitecture.BL.csproj": {
+              "projectPath": "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.BL\\DemoArchitecture.BL.csproj"
             },
-            "D:\\Visual 2019\\DemoArchitecture - Copy\\DemoArchitecture.Common\\DemoArchitecture.Common.csproj": {
-              "projectPath": "D:\\Visual 2019\\DemoArchitecture - Copy\\DemoArchitecture.Common\\DemoArchitecture.Common.csproj"
+            "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.Common\\DemoArchitecture.Common.csproj": {
+              "projectPath": "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.Common\\DemoArchitecture.Common.csproj"
             },
-            "D:\\Visual 2019\\DemoArchitecture - Copy\\DemoArchitecture.Entity\\DemoArchitecture.Entity.csproj": {
-              "projectPath": "D:\\Visual 2019\\DemoArchitecture - Copy\\DemoArchitecture.Entity\\DemoArchitecture.Entity.csproj"
+            "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.Entity\\DemoArchitecture.Entity.csproj": {
+              "projectPath": "D:\\Visual 2019\\DemoArchitecture\\DemoArchitecture.Entity\\DemoArchitecture.Entity.csproj"
             }
           }
         }

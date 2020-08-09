@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoArchitecture", "DemoArchitecture\DemoArchitecture.csproj", "{0CDDADC6-94E5-4007-8829-68DE7E253F9A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoArchitecture", "DemoArchitecture\DemoArchitecture.csproj", "{0CDDADC6-94E5-4007-8829-68DE7E253F9A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoArchitecture.DL", "DemoArchitecture.DL\DemoArchitecture.DL.csproj", "{FAA03DF1-BCED-4D37-8DAA-258C66CFD9A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoArchitecture.DL", "DemoArchitecture.DL\DemoArchitecture.DL.csproj", "{FAA03DF1-BCED-4D37-8DAA-258C66CFD9A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoArchitecture.BL", "DemoArchitecture.BL\DemoArchitecture.BL.csproj", "{B71FB3E2-AC68-4231-8E33-82F3637FE469}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoArchitecture.BL", "DemoArchitecture.BL\DemoArchitecture.BL.csproj", "{B71FB3E2-AC68-4231-8E33-82F3637FE469}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoArchitecture.Common", "DemoArchitecture.Common\DemoArchitecture.Common.csproj", "{75F71871-E68D-4AF5-9721-C32DF61113E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoArchitecture.Common", "DemoArchitecture.Common\DemoArchitecture.Common.csproj", "{75F71871-E68D-4AF5-9721-C32DF61113E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoArchitecture.Entity", "DemoArchitecture.Entity\DemoArchitecture.Entity.csproj", "{B9B7012D-53D0-4D4D-BF34-22D20E26B74C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoArchitecture.Entity", "DemoArchitecture.Entity\DemoArchitecture.Entity.csproj", "{B9B7012D-53D0-4D4D-BF34-22D20E26B74C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoArchitecture.Worker", "DemoArchitecture.Worker\DemoArchitecture.Worker.csproj", "{E6EC974B-A5D2-4018-B611-E7E781A8F041}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{B9B7012D-53D0-4D4D-BF34-22D20E26B74C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9B7012D-53D0-4D4D-BF34-22D20E26B74C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9B7012D-53D0-4D4D-BF34-22D20E26B74C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6EC974B-A5D2-4018-B611-E7E781A8F041}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6EC974B-A5D2-4018-B611-E7E781A8F041}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6EC974B-A5D2-4018-B611-E7E781A8F041}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6EC974B-A5D2-4018-B611-E7E781A8F041}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

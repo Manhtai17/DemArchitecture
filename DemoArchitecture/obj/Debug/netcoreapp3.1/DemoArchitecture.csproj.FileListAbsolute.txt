@@ -385,3 +385,4 @@ D:\Visual 2019\DemoArchitecture - Copy\DemoArchitecture\obj\Debug\netcoreapp3.1\
 D:\Visual 2019\DemoArchitecture - Copy\DemoArchitecture\obj\Debug\netcoreapp3.1\DemoArchitecture.dll
 D:\Visual 2019\DemoArchitecture - Copy\DemoArchitecture\obj\Debug\netcoreapp3.1\DemoArchitecture.pdb
 D:\Visual 2019\DemoArchitecture - Copy\DemoArchitecture\obj\Debug\netcoreapp3.1\Razor\Views\Email\EmailForm.cshtml.g.cs
+D:\Visual 2019\DemoArchitecture\DemoArchitecture\obj\Debug\netcoreapp3.1\Razor\Views\Emails\EmailForm.cshtml.g.cs

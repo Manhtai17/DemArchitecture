@@ -10,8 +10,11 @@ namespace DemoArchitecture.Entity.Entities
         [BsonId]
         [BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
         public string EmailId { get; set; }
+        public string EmailSenderName { get; set; }
+        public string EmailSenderAddress { get; set; }
         public string Subject { get; set; }
         public string Body { get; set; }
-        public List<string> Recipients { get; set; }
+        public Dictionary<string, string>? CustomArgs { get; set; }
+        public string? Recipients { get; set; }
     }
 }

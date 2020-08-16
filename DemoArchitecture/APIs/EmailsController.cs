@@ -1,16 +1,20 @@
-﻿using DemoArchitecture.BL.Interfaces;
+﻿using Confluent.Kafka;
+using DemoArchitecture.BL.Interfaces;
+using DemoArchitecture.Common.Kafka;
 using DemoArchitecture.Controllers;
 using DemoArchitecture.Entity.Entities;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Threading.Tasks;
 
 namespace DemoArchitecture.APIs
 {
 	public class EmailsController : BaseController<Email>
 	{
-		public EmailsController(IBaseBL<Email> emp) : base(emp)
+		private readonly ProducerConfig _producerConfig;
+		public EmailsController(IBaseBL<Email> emp, ProducerConfig producerConfig) : base(emp)
 		{
-
+			_producerConfig = producerConfig;
 		}
 
 
@@ -20,7 +24,7 @@ namespace DemoArchitecture.APIs
 		[HttpPost]
 		[Route("send")]
 
-		public IActionResult SendMail([FromBody]Email email)
+		public async Task<IActionResult> SendMail([FromBody]Email email)
 		{
 			try
 			{
@@ -42,8 +46,10 @@ namespace DemoArchitecture.APIs
 				//		return BadRequest();
 				//	}
 				//}
-
-
+				using (var producer = new ProducerWrapper<Null,string>(_producerConfig,email.Topic))
+				{
+					 await producer.SendMessage(email.ToString());
+				}
 				return Ok(email);
 			}
 			catch (Exception ex)

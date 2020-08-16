@@ -14,5 +14,7 @@ namespace DemoArchitecture.Entity.Entities
         public string Body { get; set; }
         public Dictionary<string, string>? CustomArgs { get; set; }
         public string? Recipients { get; set; }
+
+        public string Topic { get; set; }
     }
 }

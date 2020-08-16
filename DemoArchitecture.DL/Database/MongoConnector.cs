@@ -1,7 +1,6 @@
 ﻿using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace DemoArchitecture.DL.Database
@@ -27,13 +26,13 @@ namespace DemoArchitecture.DL.Database
 
 		public async Task<T> DeleteEntity(T entity)
 		{
-			await _mongoCollection.DeleteOneAsync(x => x==entity);
+			await _mongoCollection.DeleteOneAsync(x => x == entity);
 			return entity;
 		}
 
-		public  IEnumerable<T> GetAll()
+		public IEnumerable<T> GetAll()
 		{
-			var entities =  _mongoCollection.AsQueryable<T>();
+			var entities = _mongoCollection.AsQueryable<T>();
 			return entities.ToList();
 		}
 

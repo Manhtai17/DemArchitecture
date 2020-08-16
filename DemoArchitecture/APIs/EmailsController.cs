@@ -1,36 +1,31 @@
 ﻿using DemoArchitecture.BL.Interfaces;
 using DemoArchitecture.Controllers;
-using DemoArchitecture.DL.Database;
 using DemoArchitecture.Entity.Entities;
 using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Mail;
-using System.Threading.Tasks;
 
 namespace DemoArchitecture.APIs
 {
 	public class EmailsController : BaseController<Email>
 	{
-		public EmailsController(IBaseBL<Email> emp ) : base(emp)
+		public EmailsController(IBaseBL<Email> emp) : base(emp)
 		{
 
 		}
 
 
-		
+
 
 
 		[HttpPost]
 		[Route("send")]
 
-		public IActionResult  SendMail([FromBody]Email email)
+		public IActionResult SendMail([FromBody]Email email)
 		{
 			try
 			{
 				email.EmailId = Guid.NewGuid().ToString();
-				if(email.Recipients == null)
+				if (email.Recipients == null)
 				{
 					return BadRequest();
 				}
@@ -48,10 +43,10 @@ namespace DemoArchitecture.APIs
 				//	}
 				//}
 
-				
+
 				return Ok(email);
 			}
-			catch(Exception ex)
+			catch (Exception ex)
 			{
 				return BadRequest(ex);
 			}
@@ -63,11 +58,12 @@ namespace DemoArchitecture.APIs
 			{
 				var addr = new System.Net.Mail.MailAddress(email);
 				return addr.Address == email;
-			}catch(Exception ex)
+			}
+			catch (Exception ex)
 			{
 				return false;
 			}
-			
+
 		}
 	}
 }

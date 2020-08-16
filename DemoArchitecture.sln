@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoArchitecture.Common", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoArchitecture.Entity", "DemoArchitecture.Entity\DemoArchitecture.Entity.csproj", "{B9B7012D-53D0-4D4D-BF34-22D20E26B74C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoArchitecture.Worker", "DemoArchitecture.Worker\DemoArchitecture.Worker.csproj", "{E6EC974B-A5D2-4018-B611-E7E781A8F041}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoArchitecture.Worker", "DemoArchitecture.Worker\DemoArchitecture.Worker.csproj", "{E6EC974B-A5D2-4018-B611-E7E781A8F041}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoArchitecture.Schedule", "DemoArchitecture.Schedule\DemoArchitecture.Schedule.csproj", "{F264A556-C32B-4DF4-886B-E879C4AC59F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{E6EC974B-A5D2-4018-B611-E7E781A8F041}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6EC974B-A5D2-4018-B611-E7E781A8F041}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E6EC974B-A5D2-4018-B611-E7E781A8F041}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F264A556-C32B-4DF4-886B-E879C4AC59F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F264A556-C32B-4DF4-886B-E879C4AC59F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F264A556-C32B-4DF4-886B-E879C4AC59F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F264A556-C32B-4DF4-886B-E879C4AC59F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

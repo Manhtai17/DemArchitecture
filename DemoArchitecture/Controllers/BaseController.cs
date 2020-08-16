@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using DemoArchitecture.BL.Interfaces;
-using Microsoft.AspNetCore.Http;
+﻿using DemoArchitecture.BL.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DemoArchitecture.Controllers

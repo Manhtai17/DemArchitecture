@@ -16,6 +16,19 @@
           "lib/netstandard2.0/BouncyCastle.Crypto.dll": {}
         }
       },
+      "Confluent.Kafka/1.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.0",
+          "librdkafka.redist": "1.5.0"
+        },
+        "compile": {
+          "lib/netcoreapp2.1/Confluent.Kafka.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/Confluent.Kafka.dll": {}
+        }
+      },
       "DnsClient/1.3.1": {
         "type": "package",
         "compile": {
@@ -72,6 +85,82 @@
         },
         "runtime": {
           "lib/netstandard2.0/K4os.Hash.xxHash.dll": {}
+        }
+      },
+      "librdkafka.redist/1.5.0": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/alpine-librdkafka.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/centos7-librdkafka.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/debian9-librdkafka.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/librdkafka.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx-x64/native/librdkafka.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/win-x64/native/librdkafka.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/librdkafkacpp.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/libzstd.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/msvcp120.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/msvcr120.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/zlib.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/librdkafka.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/librdkafkacpp.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/libzstd.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/msvcp120.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/msvcr120.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/zlib.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
         }
       },
       "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
@@ -1054,7 +1143,7 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "Newtonsoft.Json/11.0.2": {
+      "Newtonsoft.Json/12.0.3": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
@@ -3275,6 +3364,10 @@
       "DemoArchitecture.Common/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Confluent.Kafka": "1.5.0",
+          "Newtonsoft.Json": "12.0.3"
+        },
         "compile": {
           "bin/placeholder/DemoArchitecture.Common.dll": {}
         },
@@ -3342,6 +3435,27 @@
         "lib/netstandard2.0/BouncyCastle.Crypto.xml",
         "lib/xamarinios/BouncyCastle.Crypto.dll",
         "lib/xamarinios/BouncyCastle.Crypto.xml"
+      ]
+    },
+    "Confluent.Kafka/1.5.0": {
+      "sha512": "ltuOkRPcNy0N/ZIYFOr/RWFSmr3dZLd0qavQN2Tj1k1K7Ts31jobNuZzc4F1cwZeCmS7zuOKmXpIpu+LH0w9PQ==",
+      "type": "package",
+      "path": "confluent.kafka/1.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "confluent.kafka.1.5.0.nupkg.sha512",
+        "confluent.kafka.nuspec",
+        "lib/net45/Confluent.Kafka.dll",
+        "lib/net45/Confluent.Kafka.xml",
+        "lib/net46/Confluent.Kafka.dll",
+        "lib/net46/Confluent.Kafka.xml",
+        "lib/netcoreapp2.1/Confluent.Kafka.dll",
+        "lib/netcoreapp2.1/Confluent.Kafka.xml",
+        "lib/netstandard1.3/Confluent.Kafka.dll",
+        "lib/netstandard1.3/Confluent.Kafka.xml",
+        "lib/netstandard2.0/Confluent.Kafka.dll",
+        "lib/netstandard2.0/Confluent.Kafka.xml"
       ]
     },
     "DnsClient/1.3.1": {
@@ -3436,6 +3550,46 @@
         "lib/netstandard1.6/K4os.Hash.xxHash.xml",
         "lib/netstandard2.0/K4os.Hash.xxHash.dll",
         "lib/netstandard2.0/K4os.Hash.xxHash.xml"
+      ]
+    },
+    "librdkafka.redist/1.5.0": {
+      "sha512": "27vxPMQ8qnzadF+IoMIQ3LcMAh/JwtE3uNFFOZaW4RCD+JV6KETwWYROMCth1pResxcvVtSyU/GdHI+M9t3C5g==",
+      "type": "package",
+      "path": "librdkafka.redist/1.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CONFIGURATION.md",
+        "LICENSES.txt",
+        "README.md",
+        "build/librdkafka.redist.props",
+        "build/native/include/librdkafka/rdkafka.h",
+        "build/native/include/librdkafka/rdkafka_mock.h",
+        "build/native/include/librdkafka/rdkafkacpp.h",
+        "build/native/lib/win/x64/win-x64-Release/v120/librdkafka.lib",
+        "build/native/lib/win/x64/win-x64-Release/v120/librdkafkacpp.lib",
+        "build/native/lib/win/x86/win-x86-Release/v120/librdkafka.lib",
+        "build/native/lib/win/x86/win-x86-Release/v120/librdkafkacpp.lib",
+        "build/native/librdkafka.redist.targets",
+        "librdkafka.redist.1.5.0.nupkg.sha512",
+        "librdkafka.redist.nuspec",
+        "runtimes/linux-x64/native/alpine-librdkafka.so",
+        "runtimes/linux-x64/native/centos7-librdkafka.so",
+        "runtimes/linux-x64/native/debian9-librdkafka.so",
+        "runtimes/linux-x64/native/librdkafka.so",
+        "runtimes/osx-x64/native/librdkafka.dylib",
+        "runtimes/win-x64/native/librdkafka.dll",
+        "runtimes/win-x64/native/librdkafkacpp.dll",
+        "runtimes/win-x64/native/libzstd.dll",
+        "runtimes/win-x64/native/msvcp120.dll",
+        "runtimes/win-x64/native/msvcr120.dll",
+        "runtimes/win-x64/native/zlib.dll",
+        "runtimes/win-x86/native/librdkafka.dll",
+        "runtimes/win-x86/native/librdkafkacpp.dll",
+        "runtimes/win-x86/native/libzstd.dll",
+        "runtimes/win-x86/native/msvcp120.dll",
+        "runtimes/win-x86/native/msvcr120.dll",
+        "runtimes/win-x86/native/zlib.dll"
       ]
     },
     "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
@@ -4928,10 +5082,10 @@
         "netstandard.library.nuspec"
       ]
     },
-    "Newtonsoft.Json/11.0.2": {
-      "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
+    "Newtonsoft.Json/12.0.3": {
+      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
       "type": "package",
-      "path": "newtonsoft.json/11.0.2",
+      "path": "newtonsoft.json/12.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4954,8 +5108,9 @@
         "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.11.0.2.nupkg.sha512",
-        "newtonsoft.json.nuspec"
+        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
       ]
     },
     "NuGet.Frameworks/4.7.0": {

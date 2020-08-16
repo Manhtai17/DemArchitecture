@@ -1,12 +1,10 @@
 ﻿using MongoDB.Bson.Serialization.Attributes;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace DemoArchitecture.Entity.Entities
 {
-	public class Email:BaseEntity
-	{
+    public class Email : BaseEntity
+    {
         [BsonId]
         [BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
         public string EmailId { get; set; }

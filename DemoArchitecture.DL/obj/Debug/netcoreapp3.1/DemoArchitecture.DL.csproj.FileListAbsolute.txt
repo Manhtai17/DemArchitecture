@@ -1,18 +1,3 @@
-D:\Visual 2019\DemoArchitecture\DemoArchitecture.DL\bin\Debug\netcoreapp3.1\DemoArchitecture.DL.deps.json
-D:\Visual 2019\DemoArchitecture\DemoArchitecture.DL\bin\Debug\netcoreapp3.1\DemoArchitecture.DL.runtimeconfig.json
-D:\Visual 2019\DemoArchitecture\DemoArchitecture.DL\bin\Debug\netcoreapp3.1\DemoArchitecture.DL.runtimeconfig.dev.json
-D:\Visual 2019\DemoArchitecture\DemoArchitecture.DL\bin\Debug\netcoreapp3.1\DemoArchitecture.DL.dll
-D:\Visual 2019\DemoArchitecture\DemoArchitecture.DL\bin\Debug\netcoreapp3.1\DemoArchitecture.DL.pdb
-D:\Visual 2019\DemoArchitecture\DemoArchitecture.DL\bin\Debug\netcoreapp3.1\DemoArchitecture.Common.dll
-D:\Visual 2019\DemoArchitecture\DemoArchitecture.DL\bin\Debug\netcoreapp3.1\DemoArchitecture.Entity.dll
-D:\Visual 2019\DemoArchitecture\DemoArchitecture.DL\bin\Debug\netcoreapp3.1\DemoArchitecture.Common.pdb
-D:\Visual 2019\DemoArchitecture\DemoArchitecture.DL\bin\Debug\netcoreapp3.1\DemoArchitecture.Entity.pdb
-D:\Visual 2019\DemoArchitecture\DemoArchitecture.DL\obj\Debug\netcoreapp3.1\DemoArchitecture.DL.csprojAssemblyReference.cache
-D:\Visual 2019\DemoArchitecture\DemoArchitecture.DL\obj\Debug\netcoreapp3.1\DemoArchitecture.DL.AssemblyInfoInputs.cache
-D:\Visual 2019\DemoArchitecture\DemoArchitecture.DL\obj\Debug\netcoreapp3.1\DemoArchitecture.DL.AssemblyInfo.cs
-D:\Visual 2019\DemoArchitecture\DemoArchitecture.DL\obj\Debug\netcoreapp3.1\DemoArchitecture.DL.csproj.CopyComplete
-D:\Visual 2019\DemoArchitecture\DemoArchitecture.DL\obj\Debug\netcoreapp3.1\DemoArchitecture.DL.dll
-D:\Visual 2019\DemoArchitecture\DemoArchitecture.DL\obj\Debug\netcoreapp3.1\DemoArchitecture.DL.pdb
 D:\Visual 2019\DemoArchitecture - Copy\DemoArchitecture.DL\bin\Debug\netcoreapp3.1\DemoArchitecture.DL.deps.json
 D:\Visual 2019\DemoArchitecture - Copy\DemoArchitecture.DL\bin\Debug\netcoreapp3.1\DemoArchitecture.DL.runtimeconfig.json
 D:\Visual 2019\DemoArchitecture - Copy\DemoArchitecture.DL\bin\Debug\netcoreapp3.1\DemoArchitecture.DL.runtimeconfig.dev.json

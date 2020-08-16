@@ -24,9 +24,9 @@ namespace DemoArchitecture.DL.Repository
 			return _dbContext.DeleteEntity(entity);
 		}
 
-		public  IEnumerable<T> GetAllDL()
+		public IEnumerable<T> GetAllDL()
 		{
-			return  _dbContext.GetAll();
+			return _dbContext.GetAll();
 		}
 
 		public IEnumerable<T> GetRecordsDL(int limit)

@@ -1,14 +1,12 @@
 ﻿using DemoArchitecture.Entity.Entities;
-using System;
-using System.Collections.Generic;
 using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DemoArchitecture.Worker.EmailProvider
 {
-	public class EmailSenderSMTP
-	{
+    public class EmailSenderSMTP
+    {
         private readonly SmtpClient _smtpClient;
 
         public EmailSenderSMTP(string host, int port, string username, string password)
@@ -22,33 +20,36 @@ namespace DemoArchitecture.Worker.EmailProvider
             _smtpClient = smtpClient;
         }
 
-            public async Task<bool> SendMail(Email outboxMail)
+        public async Task<bool> SendMail(Email outboxMail)
+        {
+            MailMessage mailMessage = new MailMessage();
+            mailMessage.Sender = new MailAddress(outboxMail.EmailSenderAddress, outboxMail.EmailSenderName);
+            mailMessage.From = new MailAddress(outboxMail.EmailSenderAddress, outboxMail.EmailSenderName);
+            mailMessage.Subject = outboxMail.Subject;
+            mailMessage.Body = outboxMail.Body;
+            mailMessage.BodyEncoding = UTF8Encoding.UTF8;
+
+
+            mailMessage.To.Add(new MailAddress(outboxMail.Recipients));
+            try
             {
-                MailMessage mailMessage = new MailMessage();
-                mailMessage.Sender = new MailAddress(outboxMail.EmailSenderAddress, outboxMail.EmailSenderName);
-                mailMessage.From = new MailAddress(outboxMail.EmailSenderAddress, outboxMail.EmailSenderName);
-                mailMessage.Subject = outboxMail.Subject;
-                mailMessage.Body = outboxMail.Body;
-                mailMessage.BodyEncoding = UTF8Encoding.UTF8;
+                await _smtpClient.SendMailAsync(mailMessage);
 
-
-                mailMessage.To.Add(new MailAddress(outboxMail.Recipients));
-                try {
-                _smtpClient.Send(mailMessage);
-
-                } catch (SmtpException ex)  
-                { 
-                    return false; 
-                };
-                return true;
             }
-
-            public void Dispose()
+            catch (SmtpException ex)
             {
-                _smtpClient.Dispose();
-            }
-
+                return false;
+            };
+            return true;
 
         }
-    
+
+        public void Dispose()
+        {
+            _smtpClient.Dispose();
+        }
+
+
+    }
+
 }

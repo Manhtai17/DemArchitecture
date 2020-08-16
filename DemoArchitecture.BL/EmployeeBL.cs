@@ -9,7 +9,7 @@ namespace DemoArchitecture.BL
 		{
 
 		}
-		
+
 
 	}
 }

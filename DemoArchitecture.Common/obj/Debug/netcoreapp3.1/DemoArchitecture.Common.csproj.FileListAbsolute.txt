@@ -1,11 +1,3 @@
-D:\Visual 2019\DemoArchitecture\DemoArchitecture.Common\bin\Debug\netcoreapp3.1\DemoArchitecture.Common.deps.json
-D:\Visual 2019\DemoArchitecture\DemoArchitecture.Common\bin\Debug\netcoreapp3.1\DemoArchitecture.Common.dll
-D:\Visual 2019\DemoArchitecture\DemoArchitecture.Common\bin\Debug\netcoreapp3.1\DemoArchitecture.Common.pdb
-D:\Visual 2019\DemoArchitecture\DemoArchitecture.Common\obj\Debug\netcoreapp3.1\DemoArchitecture.Common.csprojAssemblyReference.cache
-D:\Visual 2019\DemoArchitecture\DemoArchitecture.Common\obj\Debug\netcoreapp3.1\DemoArchitecture.Common.AssemblyInfoInputs.cache
-D:\Visual 2019\DemoArchitecture\DemoArchitecture.Common\obj\Debug\netcoreapp3.1\DemoArchitecture.Common.AssemblyInfo.cs
-D:\Visual 2019\DemoArchitecture\DemoArchitecture.Common\obj\Debug\netcoreapp3.1\DemoArchitecture.Common.dll
-D:\Visual 2019\DemoArchitecture\DemoArchitecture.Common\obj\Debug\netcoreapp3.1\DemoArchitecture.Common.pdb
 D:\Visual 2019\DemoArchitecture - Copy\DemoArchitecture.Common\bin\Debug\netcoreapp3.1\DemoArchitecture.Common.deps.json
 D:\Visual 2019\DemoArchitecture - Copy\DemoArchitecture.Common\bin\Debug\netcoreapp3.1\DemoArchitecture.Common.dll
 D:\Visual 2019\DemoArchitecture - Copy\DemoArchitecture.Common\bin\Debug\netcoreapp3.1\DemoArchitecture.Common.pdb

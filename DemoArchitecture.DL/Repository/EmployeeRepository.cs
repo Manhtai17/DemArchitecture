@@ -1,9 +1,5 @@
 ﻿using DemoArchitecture.DL.Database;
-using DemoArchitecture.Entity;
 using DemoArchitecture.Entity.Entities;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace DemoArchitecture.DL.Repository
 {
@@ -11,7 +7,7 @@ namespace DemoArchitecture.DL.Repository
 	{
 		public EmployeeRepository(IDbContext<Employee> dbContext) : base(dbContext)
 		{
-			
+
 		}
 
 	}

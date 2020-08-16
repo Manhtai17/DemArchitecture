@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace DemoArchitecture.DL.MongoSetting
+﻿namespace DemoArchitecture.DL.MongoSetting
 {
 	public class MongoSettings : IDatabaseSetting
 	{

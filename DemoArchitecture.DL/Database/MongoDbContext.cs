@@ -1,15 +1,11 @@
 ﻿using DemoArchitecture.DL.MongoSetting;
-using Microsoft.EntityFrameworkCore;
 using MongoDB.Driver;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace DemoArchitecture.DL.Database
 {
 	public class MongoDbContext
 	{
-		private readonly IMongoClient _mongoClient ;
+		private readonly IMongoClient _mongoClient;
 		private readonly IMongoDatabase _mongoDatabase;
 
 		public MongoDbContext(IDatabaseSetting databaseSetting)
@@ -20,6 +16,6 @@ namespace DemoArchitecture.DL.Database
 
 		public IMongoDatabase MongoDatabase { get => _mongoDatabase; }
 
-		
+
 	}
 }

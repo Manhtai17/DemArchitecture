@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace DemoArchitecture.DL.MongoSetting
+﻿namespace DemoArchitecture.DL.MongoSetting
 {
 	public interface IDatabaseSetting
 	{
-		 string ConnectionString { get; set; }
-		 string DatabaseName { get; set; }
+		string ConnectionString { get; set; }
+		string DatabaseName { get; set; }
 	}
 }

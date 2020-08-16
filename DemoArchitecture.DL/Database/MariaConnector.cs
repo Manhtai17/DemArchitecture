@@ -1,6 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -32,13 +30,13 @@ namespace DemoArchitecture.DL.Database
 
 		public virtual IEnumerable<T> GetAll()
 		{
-			var entities =  _dbContext.Set<T>();
+			var entities = _dbContext.Set<T>();
 			return entities;
 		}
 
-		public  IEnumerable<T> GetRecords(int limit)
+		public IEnumerable<T> GetRecords(int limit)
 		{
-			return  _dbContext.Set<T>().Take<T>(limit);
+			return _dbContext.Set<T>().Take<T>(limit);
 		}
 
 	}
